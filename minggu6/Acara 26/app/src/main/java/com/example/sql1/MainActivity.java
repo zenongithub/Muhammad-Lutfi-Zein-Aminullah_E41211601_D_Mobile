@@ -37,39 +37,6 @@ public class MainActivity extends AppCompatActivity {
         writeData(myFile, info);
         editText.setText("");
     }
-//public void savePublic(View view) {
-//    if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-//        // Jika izin belum diberikan, maka permintaan izin kepada pengguna
-//        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
-//    } else {
-//        // Jika izin sudah diberikan, maka melakukan aksi yang diinginkan
-//        String info = editText.getText().toString();
-//        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);//folder name
-//        File myFile = new File(folder, "Data1.txt");//file name
-//        writeData(myFile, info);
-//        editText.setText("");
-//    }
-//}
-//
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-//        switch (requestCode) {
-//            case STORAGE_PERMISSION_CODE:
-//                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-//                    // Izin diberikan, maka melakukan aksi yang diinginkan
-//                    String info = editText.getText().toString();
-//                    File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);//folder name
-//                    File myFile = new File(folder, "Data1.txt");//file name
-//                    writeData(myFile, info);
-//                    editText.setText("");
-//                } else {
-//                    // Izin tidak diberikan, maka memberikan peringatan kepada pengguna
-//                    Toast.makeText(this, "Izin akses penyimpanan dibutuhkan untuk melakukan aksi ini", Toast.LENGTH_SHORT).show();
-//                }
-//                break;
-//        }
-//    }
 
     public void savePrivate(View view){
         String info = editText.getText().toString();
